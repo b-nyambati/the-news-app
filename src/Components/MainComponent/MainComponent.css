@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-rows: auto;
+
+    grid-template-areas: 
+    "nav"
+    "people";
+}
+
+.nav{
+    grid-area: nav;
+    height: 50px;
+}
+
+.people-grid{
+    grid-area: people;
+}
