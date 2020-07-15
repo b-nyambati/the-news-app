@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import "./Article.css"
-import axios from 'axios';
-import { string } from 'yargs';
 
 class Article extends Component {
     state = {
@@ -40,14 +38,13 @@ class Article extends Component {
                 {/* <div className="image">
                     {this.props.articleFromArticles.urlToImage}
                 </div> */}
-
-                <div className="article-content">
-                    <p>{this.props.articleFromArticles.content}</p>
-                </div>
-
                 <h2 className="title">
                     {this.props.articleFromArticles.title}
                 </h2>
+                
+                <div className="article-content">
+                    <p>{this.props.articleFromArticles.content}</p>
+                </div>
 
                 <p className="author-date">
                     {this.authorDate()}

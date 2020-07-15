@@ -1,27 +1,6 @@
 .article-grid{
-    display: grid;  
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    grid-template-areas:
-    "image title"
-    "image article-content"
-    "image author-date";
-}
-
-.image{
-    grid-area: image;
-    background-color: red;
-}
-
-.article-content{
-    grid-area: article-content;
-}
-
-.title{
-    grid-area: title;
-}
-
-.author-date{
-    grid-area: author-date;
+    display: grid;
+    grid-auto-rows: minmax(85px, auto);
+    border: 1px solid rgb(226, 226, 226);
+    padding: 1em;
 }

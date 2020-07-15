@@ -1,5 +1,7 @@
 .nav{
-    background-color: rgb(255, 239, 239);
+    background-color: rgb(255, 250, 226);
+    color: rgb(2, 6, 66);
     text-align: center;
-    color: black;
+    position: sticky;
+    top: 0;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./MainComponent.css"
-
+import NavBar from '../NavBar/NavBar'
 import axios from 'axios';
 import Articles from '../Articles/Articles';
 
@@ -19,7 +19,8 @@ class MainComponent extends Component {
 
     render() { 
         return (
-            <div>
+            <div className="main-grid">
+                <NavBar/>
                 <Articles articlesFromMainComp={this.state.articles}/>
             </div>
         );

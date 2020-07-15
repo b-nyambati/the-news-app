@@ -1,0 +1,16 @@
+.articles-grid{
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: repeat(auto-fit, minmax(40em, 1fr));
+    padding: 1em; */
+
+    padding: 1em;
+    --auto-grid-min-size: 20rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+}
+
+

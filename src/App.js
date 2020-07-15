@@ -5,9 +5,7 @@ import MainComponent from './Components/MainComponent/MainComponent';
 function App() {
 
   return (
-    <div>
-      <MainComponent/>
-    </div>
+    <MainComponent/>
   );
 }
 
