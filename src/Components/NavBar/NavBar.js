@@ -5,7 +5,8 @@ class NavBar extends Component {
     render() { 
         return (
             <div className="nav">
-                <h2>Navigation</h2>
+                <p>The News App</p>
+                {/* <h2>The News App</h2> */}
             </div>
         );
     }

@@ -3,7 +3,21 @@ import "./Article.css"
 
 class Article extends Component {
     state = {
-        articleImage : []
+        articleImage : [],
+        months: [
+            'January',
+            'February',
+            'March',
+            'April',
+            'May',
+            'June',
+            'July',
+            'August',
+            'September',
+            'October',
+            'November',
+            'December'
+        ]
     }
 
     /*
@@ -14,7 +28,24 @@ class Article extends Component {
         const articleDate = this.props.articleFromArticles.publishedAt;
         const author = this.props.articleFromArticles.author;
 
-        return articleDate + " . " + author
+        const formatedArticleDate = this.formatDate(articleDate)
+        return formatedArticleDate + " - " + author
+    }
+
+    /*
+        Formats date. Retrieved as: YYYY-MM-DDTHH:MM:SSZ
+        Formated to (month day, year). I forget what that format is caled but whatever.
+    */
+
+    formatDate = articleDate => {
+        const month = articleDate[5] == 0 ? 
+            this.state.months[articleDate[6]] : 
+            this.state.months[articleDate.slice(5,7)]
+
+        const day = articleDate.slice(8, 10)
+        const year = articleDate.slice(0, 4)
+
+        return month + " " + day + ", " + year
     }
 
     // getArticleImage = () => {
