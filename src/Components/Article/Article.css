@@ -4,3 +4,9 @@
     border: 1px solid rgb(226, 226, 226);
     padding: 1em;
 }
+
+.article-grid:hover{
+    cursor: pointer;
+    background-color: black;
+    color: rgb(255, 250, 226);
+}
