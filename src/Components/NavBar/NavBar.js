@@ -6,7 +6,10 @@ class NavBar extends Component {
         return (
             <div className="nav">
                 <p>The News App</p>
+<<<<<<< Updated upstream
                 {/* <h2>The News App</h2> */}
+=======
+>>>>>>> Stashed changes
             </div>
         );
     }

@@ -1,0 +1,24 @@
+.side-nav{
+    display: grid;
+    grid-auto-rows: 85px;
+    background-color: white;
+    position: sticky; 
+    top: 0; 
+    height: 100vh; 
+    color: white;
+    /* gap: 1em; */
+    padding: 1px;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+.sidenav-icons > .logo{
+    margin-top: 15px;
+    border-radius: 75px;
+    width: 60%;
+}
+
+.sidenav-icons > .logo:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.781);
+    cursor: pointer;
+}
