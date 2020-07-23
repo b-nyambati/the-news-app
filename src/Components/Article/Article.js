@@ -7,14 +7,10 @@ import LogoGetter from '../LogoGetter/LogoGetter';
 
 class Article extends Component {
     state = {
-<<<<<<< Updated upstream
-        articleImage : [],
-=======
         isLoaded: false,
         error: null,
         articleImage : [],
         sourceLogo : [],
->>>>>>> Stashed changes
         months: [
             'January',
             'February',
@@ -40,33 +36,12 @@ class Article extends Component {
         const formatedArticleDate = this.formatDate(articleDate)
         let author = this.props.article.author
 
-<<<<<<< Updated upstream
-        const formatedArticleDate = this.formatDate(articleDate)
-        return formatedArticleDate + " - " + author
-    }
-
-    /*
-        Formats date. Retrieved as: YYYY-MM-DDTHH:MM:SSZ
-        Formated to (month day, year). I forget what that format is caled but whatever.
-    */
-
-    formatDate = articleDate => {
-        const month = articleDate[5] == 0 ? 
-            this.state.months[articleDate[6]] : 
-            this.state.months[articleDate.slice(5,7)]
-
-        const day = articleDate.slice(8, 10)
-        const year = articleDate.slice(0, 4)
-
-        return month + " " + day + ", " + year
-=======
         author = author === "" ? null : author
 
         author = author === null ? 
             this.props.article.source.name : author
 
         return formatedArticleDate + " - " + author
->>>>>>> Stashed changes
     }
 
     /*

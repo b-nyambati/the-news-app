@@ -2,11 +2,7 @@
     /* background-color: rgb(255, 250, 226); */
     /* background-color: black;
     color: white; */
-<<<<<<< Updated upstream
-    background-color: rgb(230, 227, 227);
-=======
     background-color: white;
->>>>>>> Stashed changes
     color: black;
     text-align: center;
     position: sticky;
@@ -14,8 +10,6 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     box-shadow: 0px 1px 10px #0000005d;
-<<<<<<< Updated upstream
-=======
     height: 50px;
 }
 
@@ -27,5 +21,4 @@ span{
 
 span:hover{
     cursor: pointer;
->>>>>>> Stashed changes
 }
