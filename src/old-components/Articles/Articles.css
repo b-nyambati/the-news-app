@@ -5,14 +5,18 @@
     grid-auto-rows: minmax(100px, auto);
     grid-auto-columns: repeat(auto-fit, minmax(40em, 1fr));
     padding: 1em; */
-
+    background-color: rgb(29, 27, 32);
     padding: 1em;
     --auto-grid-min-size: 25rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+<<<<<<< Updated upstream
     grid-gap: 1rem;
     /* overflow-y: scroll; */
     /* min-height: 100vh; */
+=======
+    grid-gap: 2.5rem;
+>>>>>>> Stashed changes
 }
 
 
