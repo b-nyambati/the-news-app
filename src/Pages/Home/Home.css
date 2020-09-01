@@ -1,13 +1,16 @@
 .main{
-    display: grid;
-    grid-template-areas:
-    "";
+    /* display: grid; */
+    background-color: rgb(29, 27, 32);
+    /* padding: 1rem; */
 }
 
 .main *{
     text-decoration: none;
-    color: black;
 }
 
+.main h2{
+    color: white;
+    padding: 1rem;
+}
 
 
